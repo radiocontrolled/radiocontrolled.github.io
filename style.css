@@ -171,6 +171,9 @@ article{
 	header{
 		width: 25%!important;
 	}
+	img{
+		height: 100px!important;
+	}
 }
 /*medium*/
 @media (max-width:767px) {
@@ -193,6 +196,7 @@ article{
 		float: left;
 		
 	}
+	
 
 }
 
@@ -233,6 +237,7 @@ article{
 		width: 25%;
 		float: left;
 	}
+	
 
 }	
 
