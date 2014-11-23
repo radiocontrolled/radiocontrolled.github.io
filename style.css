@@ -15,14 +15,9 @@ body{
 
 } 
 h1{
-
-    background: none repeat scroll 0 0 #000000;
-    color: #FFFFFF;
-    display: inline-block;
+    color: #000;
     font-size: 4em;
-    font-weight: 400;
-    padding: 5px 15px;
-
+    font-weight: bold;
 }
 h1,h2,h3 {
 	font-size: 3em!important;;
@@ -60,27 +55,20 @@ ul > li{
 	margin: 0 auto;
 	max-width: 1200px;
 	max-width: 100%;
-	height: 120px;
+	/*height: 120px;*/
+	height: auto;
     background: none repeat scroll 0 0 #E6E8EA;
 }
 #header{
-	position: fixed;
-	top: 0;
+
 	width: 100%;
-	/* opacity via CSS tricks http://css-tricks.com/snippets/css/cross-browser-opacity/
-	 * IE 8 */
-  	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
- 	 filter: alpha(opacity=80);
-  	-moz-opacity: 0.8;
-  	-khtml-opacity: 0.8;
-  	opacity: 0.8;
-	z-index: 1000000;
+
 }	
 #header h2, #main{
    padding: 2em;
 }
 #main{
-    margin-top: 120px;
+
     background: none;
     margin-bottom: 5em!important;
 }
@@ -118,7 +106,7 @@ nav li.active{
 
 }
 section{
-
+	padding-bottom: 1em;
 }
 article{
 	margin: 0; 
@@ -141,47 +129,17 @@ article{
 	line-height: 1.1;
 	margin: 0 auto;
 }
-/*small*/
-@media (max-width: 480px){
-	h1 {
-		font-size: 3em;
-	}
-	 section{
-		float: none!important;
-		
-	}
-	ol, ul{
-		padding: 0; 
-		margin: 0 auto;
-	}
-	
-	.grid li {
-		width: 100%;
-		float: left;
-			padding-bottom: 2em;
-	}
-	nav{
-		width: 75%!important;
-		
-	}
-	nav ul{
-		margin: 0 auto!important;
-		text-align: center;
-	}
-	header{
-		width: 25%!important;
-	}
-	img{
-		height: 100px!important;
-	}
-}
+
 /*medium*/
 @media (max-width:767px) {
+	
+	
+	
 	h1 {
-		font-size: 5.6em;
+		font-size: 2em!important;
 	}
 	.container {
-		padding-bottom: 4em;
+	/*	padding-bottom: 4em;*/
 	}
 	.sections ul li {
 		width: 50%;
@@ -192,7 +150,7 @@ article{
 		clear: left;
 	}
 	.grid li {
-		width: 33.3333333%;
+		width: 50%;
 		float: left;
 		
 	}
@@ -231,7 +189,7 @@ article{
 		padding-right: 0;
 	}
 	h1 {
-		font-size: 4em;
+		font-size: 2em!important;
 	}
 	.grid li {
 		width: 25%;
@@ -307,4 +265,64 @@ header{
 
 .colophon{
 	color: #555555;
+}
+
+/*small*/
+@media (max-width: 480px){
+	
+	#header{
+		position: static;
+	}
+	
+	#main {
+		margin-top: 0;
+	}
+	
+	h1 {
+		font-size: 1.5em !important
+	}
+	 section{
+		float: none!important;
+		
+	}
+	ol, ul{
+		padding: 0; 
+		margin: 0 auto;
+	}
+	
+	.grid li {
+		width: 100%;
+		float: left;
+		padding-bottom: 2em;
+	}
+	nav{
+		width: 75%!important;
+		
+	}
+	nav ul{
+		margin: 0 auto!important;
+		text-align: center;
+	}
+	header{
+		width: 25%!important;
+	}
+	img{
+		height: auto !important;
+	}
+}
+
+.back{
+	display: inline-block;
+	background: #e6e8ea;
+	padding: 1em;
+}
+.back:hover,
+.back:active,
+.back:focus{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 	filter: alpha(opacity=80);
+  	-moz-opacity: 0.8;
+  	-khtml-opacity: 0.8;
+  	opacity: 0.8;
+	
 }
