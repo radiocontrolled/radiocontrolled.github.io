@@ -1,0 +1,328 @@
+
+
+* { 
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box; 
+}
+body{
+	margin: 0; 
+	padding: 0; 
+	line-height: 1;
+	color: black;
+	font: 100%/1.4  Helvetica, Arial, sans-serif;
+	-webkit-text-size-adjust: none;
+
+} 
+h1{
+    color: #000;
+    font-size: 4em;
+    font-weight: bold;
+}
+h1,h2,h3 {
+	font-size: 3em!important;;
+	line-height: 1.1;
+	letter-spacing: -0.02em;
+	margin: 0;
+	color: #black;
+}
+h2, h3 {
+	font-weight: normal;
+	line-height: 1.1;
+	font-weight: bold;
+	font-size: 2em;
+	padding-bottom: 0.2em!important;
+	border-bottom: 1px solid #555555;
+}
+h3{
+	font-size: 1.5em!important;
+}
+ol, ul { 
+	list-style: none;
+	margin: 0;
+} 
+li {
+    padding: 1em 1em 1em 0;
+}
+ul > li{
+    display: inline-block;   /* You can also add some margins here to make it look prettier */
+    zoom:1;
+    *display:inline; /* this fix is needed for IE7- */
+    float: right;
+}
+
+.container {
+	margin: 0 auto;
+	max-width: 1200px;
+	max-width: 100%;
+	/*height: 120px;*/
+	height: auto;
+    background: none repeat scroll 0 0 #E6E8EA;
+}
+#header{
+
+	width: 100%;
+
+}	
+#header h2, #main{
+   padding: 2em;
+}
+#main{
+
+    background: none;
+    margin-bottom: 5em!important;
+}
+
+.footer{
+	margin: 0 auto;
+	max-width: 960px;
+}
+a {
+	color: black;
+	font-size: 1em;
+	text-decoration: none;
+	font-weight: 600;
+}
+a:hover, a:focus, a:active {
+	color: #333333;
+}
+
+nav{
+    float: right;
+  
+    height: inherit;
+    padding: 2em;
+}
+#papers{
+	margin: 2em 0em!important;
+}
+section ul{
+	padding-left: 0!important;
+}
+nav li.active{
+	font-size: 1em;
+    font-weight: bold;
+    line-height: 1.5;
+
+}
+section{
+	padding-bottom: 1em;
+}
+article{
+	margin: 0; 
+	padding: 0;
+}
+.sections > h2 {
+	margin-left: 0.45em;
+}
+.sections > section {
+	padding: 1em 1em 0.5em;
+}
+.sections ul {
+	overflow: hidden;
+}
+.sections ul li {
+	margin-bottom: 0.3em;
+}
+
+.lead {
+	line-height: 1.1;
+	margin: 0 auto;
+}
+
+/*medium*/
+@media (max-width:767px) {
+	
+	
+	
+	h1 {
+		font-size: 2em!important;
+	}
+	.container {
+	/*	padding-bottom: 4em;*/
+	}
+	.sections ul li {
+		width: 50%;
+		float: left;
+	}
+	.sections ul li:nth-child(odd) {
+		padding-right: 1em;
+		clear: left;
+	}
+	.grid li {
+		width: 50%;
+		float: left;
+		
+	}
+	
+
+}
+
+.grid {
+  	overflow: hidden;
+
+	margin: 0 auto;
+	padding-right: 0!important;
+}
+.grid li {
+	padding: 0 0.5em 0.5em 0;
+	text-align: center;
+
+}
+.grid li a {
+	color: #fff;
+}
+		
+
+
+/*large*/
+@media (min-width: 768px) {
+	.sections > section {
+		float: left;
+		width: 33%;
+	}
+	.sections ul li {
+		width: 100%;
+		float: none;
+	}
+	.sections ul li:nth-child(odd) {
+		padding-right: 0;
+	}
+	h1 {
+		font-size: 2em!important;
+	}
+	.grid li {
+		width: 25%;
+		float: left;
+	}
+	
+
+}	
+
+img{
+	width:100% !important;
+    height:auto;
+    display:block;
+}
+.b-text{
+	background: black!important;
+	opacity: .8;
+    top: 0;
+    color: #FFFFFF;
+    left: 0;
+    position: absolute;
+    font-size: .8em;
+    line-height: 1.5;
+    width: 100%;
+    padding: .5em;
+     min-height: 55px;
+  }
+div.wrapper{
+	position: relative;
+	  text-align: left;
+}
+.text{
+	background: #black!important;
+
+	color: white; 
+	padding: .5em;
+}
+.wrapper.text{
+	margin-bottom: 1em;
+}
+.icon-github, .icon-twitter, .icon-linkedin, .icon-envelope{
+	color: white!important;
+}
+
+
+/* footer */ 
+
+footer {
+  height: 3em!important;
+  background: #black!important;
+  width: 100%;
+}
+.footer{
+	padding-top: .9em; 
+	paddint-left: 2em;
+}
+
+/* fade */ 
+@keyframes fadeIn {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+}
+
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+
+header{
+	width: 75%;
+	padding: 2em;
+}
+
+.colophon{
+	color: #555555;
+}
+
+/*small*/
+@media (max-width: 480px){
+	
+	#header{
+		position: static;
+	}
+	
+	#main {
+		margin-top: 0;
+	}
+	
+	h1 {
+		font-size: 1.5em !important
+	}
+	 section{
+		float: none!important;
+		
+	}
+	ol, ul{
+		padding: 0; 
+		margin: 0 auto;
+	}
+	
+	.grid li {
+		width: 100%;
+		float: left;
+		padding-bottom: 2em;
+	}
+	nav{
+		width: 75%!important;
+		
+	}
+	nav ul{
+		margin: 0 auto!important;
+		text-align: center;
+	}
+	header{
+		width: 25%!important;
+	}
+	img{
+		height: auto !important;
+	}
+}
+
+.back{
+	display: inline-block;
+	background: #e6e8ea;
+	padding: 1em;
+}
+.back:hover,
+.back:active,
+.back:focus{
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 	filter: alpha(opacity=80);
+  	-moz-opacity: 0.8;
+  	-khtml-opacity: 0.8;
+  	opacity: 0.8;
+	
+}
